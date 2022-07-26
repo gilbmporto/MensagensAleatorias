@@ -42,14 +42,12 @@ generateArrOfMessages(ArrOfWisdomMessages, MotMessage10);
 var contadorMensagensGeradas = 0;
 
 const generateRandomPhrase = (Arr) => {
-    contadorMensagensGeradas++;
+    contadorMensagensGeradas += 1;
     let randomNumber = Math.floor(Math.random() * Arr.length);
     let authorName = Arr[randomNumber].name;
     let quoteMessage = Arr[randomNumber].quote;
     return `Wisdom of today: ${quoteMessage} -- ${authorName}`
 }
-
-console.log(generateRandomPhrase(ArrOfWisdomMessages));
 
 //Declaração das variáveis dos elementos HTML:
 var mensMotiv = document.getElementById('mens-motiv');
