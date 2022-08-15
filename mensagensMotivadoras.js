@@ -60,6 +60,9 @@ botaoGerarFrase.addEventListener('click', () => {
     return mensMotiv.innerHTML = generateRandomPhrase(ArrOfWisdomMessages);
 });
 botaoGerarFrase.addEventListener('click', () => {
-    return contDeMensagens.innerHTML = `Você já viu ${contadorMensagensGeradas} mensagens hoje.`;
+    if (contadorMensagensGeradas === 1) {
+        return contDeMensagens.innerHTML = `Você já viu ${contadorMensagensGeradas} mensagem hoje.`;
+    } else {
+        return contDeMensagens.innerHTML = `Você já viu ${contadorMensagensGeradas} mensagens hoje.`;
 });
 
